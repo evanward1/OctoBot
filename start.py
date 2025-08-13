@@ -15,7 +15,9 @@
 #  License along with OctoBot. If not, see <https://www.gnu.org/licenses/>.
 import sys
 
-from octobot.cli import main
+from octobot.cli import cli_main
+from octobot.constants import OCTOBOT_VERSION
 
-if __name__ == '__main__':
-    main(sys.argv[1:])
+if __name__ == "__main__":
+    print(f"✅ Starting OctoBot version {OCTOBOT_VERSION}")
+    cli_main(sys.argv[1:])
